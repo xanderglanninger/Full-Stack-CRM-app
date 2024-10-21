@@ -12,7 +12,7 @@
     "contractname": "Contract 1",
     "location": "Montana",
     "assigned": "Xander Glanninger",
-    "finished": false 
+    "finished": false
   },
   {
     "contract_id": 2,
@@ -60,6 +60,7 @@
     "finished": false
   },
   {
+    "contract_id": 5,
     "clientName": "Jan",
     "clientSurname": "Doe",
     "clientEmail": "janmen777@gmail.com",
@@ -74,6 +75,7 @@
     "finished": false
   },
   {
+    "contract_id": 6,
     "clientName": "Jane",
     "clientSurname": "Mentz",
     "clientEmail": "jane@gmail.com",
