@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ==================================================================================================================================*/
+
+.logo-heading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+}
+
+.logo-heading-container h2 {
+  font-weight: 300;
+  font-size: 1.7vh;
+}
+
+.circle-logo {
+  width: 7vh;
+  height: 7vh;
+  background-color: #ff8e3f;
+  border-radius: 50%;
+  border: #fff solid 1px;
+  margin-right: 2vh;
+}
+
+.sidebar {
+  width: 40vh !important;
+  background-color: #292929;
+  padding: 1vh;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: 100vh;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  margin-top: 2vh;
+}
+
+.nav-links div {
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.nav-links img {
+  margin-left: 12vh;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1vh;
+  font-weight: 200;
+  font-size: 1.5vh;
+}
+
+.nav-links div:hover {
+  background-color: #1e1e1e;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.log-out-btn-container {
+  height: 50vh;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+#technician {
+  background-color: #1e1e1e;
+}
+
+#dashboard img {
+  height: 1.5vh;
+}
+
+#contracts img {
+  height: 1.5vh;
+}
+
+#technician img {
+  height: 1.5vh;
+}
+
+#client img {
+  height: 1.5vh;
+}
+
+#assignjob img {
+  height: 1.5vh;
+}
+
+#reporting img {
+  height: 1.5vh;
+}
+
+#logoutbtn img {
+  height: 1.5vh;
+}
+
+#logoutbtn a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1vh;
+  font-size: 1.5vh;
+  font-weight: 200;
+}
+
+#logoutbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ================================================================================================================================================================*/
+.main-technician-container {
+  padding: 4vh;
+  width: 150vh;
+  margin-left: 40vh;
+}
+.main-title-container {
+  width: 100%; /* Title container spans full width */
+  height: 16vh; /* Height for the title container */
+  background: linear-gradient(to right, #f1712b, #cd4e14);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  flex-direction: column;
+  padding: 0; /* No padding inside the container */
+}
+
+.main-title-container h1 {
+  font-weight: 300;
+  font-size: 4vh; /* Responsive font size */
+}
+
+.main-title-container h3 {
+  font-weight: 100;
+  font-size: 2vh; /* Responsive font size */
+}
+
+/* General styling for the form container */
+.technician-forms-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2a2a2a; /* Dark background */
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 3vh;
+  height: 70vh;
+}
+
+/* Styling for each input block */
+.tech-input {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  width: 500px;
+}
+
+.tech-input label {
+  color: #fff;
+  font-size: 16px;
+  width: 150px;
+  text-align: right;
+}
+
+.tech-input input {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #ff7600;
+  border-radius: 5px;
+  background-color: #1e1e1e;
+  color: #ff7600;
+  font-size: 14px;
+}
+
+.tech-input input::placeholder {
+  color: #ff7600;
+}
+
+/* Layout adjustment for work hours (wide field at bottom) */
+#Technician-Location {
+  width: 480px; /* Making it full width for alignment */
+}
+
+/* Styling for the submit button */
+.technician-submit-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.technician-submit-border {
+  border-radius: 25px;
+  background-color: #ff7600;
+  padding: 5px;
+}
+
+/* Styling for the form heading */
+.form-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-heading h3 {
+  color: #fff;
+  font-size: 19px;
+  margin: 0;
+}
+
+/* Two-column layout for the inputs */
+.tech-input-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  grid-gap: 20px; /* Spacing between the columns */
+  width: 60%;
+}
+
+/* Styling for each input block */
+.tech-input {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.tech-input label {
+  color: #fff;
+  font-size: 12px;
+  margin-right: 10px;
+  width: 100px; /* Width of the label */
+}
+
+.tech-input input {
+  flex-grow: 1; /* Take remaining space next to the label */
+  padding: 10px;
+  border: 2px solid #ff7600;
+  border-radius: 5px;
+  background-color: #1e1e1e;
+  color: #ff7600;
+  font-size: 12px;
+}
+
+.tech-input input::placeholder {
+  color: #ff7600;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Styling for the wide input (Location) */
+.tech-input-location {
+  grid-column: 1 / span 2; /* Full width across both columns */
+  width: 60%;
+}
+
+.tech-input-location input {
+  width: 100%;
+  flex-grow: 1; /* Take remaining space next to the label */
+  padding: 10px;
+  border: 2px solid #ff7600;
+  border-radius: 5px;
+  background-color: #1e1e1e;
+  color: #ff7600;
+  font-size: 12px;
+}
+.tech-input-location input::placeholder {
+  color: #ff7600;
+  font-family: "Poppins", sans-serif;
+}
+
+.tech-input-location label {
+  font-size: 12px;
+}
+
+/* Styling for the submit button (align bottom right) */
+.technician-submit-button-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.technician-submit-border {
+  border-radius: 25px;
+  background-color: #ff7600;
+  padding: 5px;
+}
+
+#technician-submit-button {
+  width: 200px; /* Wider button */
+  padding: 12px; /* Shorter height */
+  background: linear-gradient(to right, #f1712b, #cd4e14);
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#technician-submit-button:hover {
+  background: linear-gradient(to right, #cd4e14, #f1712b);
+}

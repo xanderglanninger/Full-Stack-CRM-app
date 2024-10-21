@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/technician.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <script src="/js/redirect.js"></script>
+  <title>Technician</title>
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="logo-heading-container">
+      <div class="circle-logo"></div>
+      <h2>Apex Care Solutions</h2>
+    </div>
+    <div>
+      <div class="nav-links">
+        <div id="dashboard"><img src="/images/home (1).png" /> <a href="/dashboard">Dashboard</a></div>
+        <div id="contracts"><img src="/images/contract.png" /><a href="/contract">Contracts & Clients</a></div>
+        <div id="technician"><img src="/images/man.png" /><a href="/technician">Technician</a></div>
+        <div id="assignjob"><img src="/images/suitcase.png" /><a href="/assign">Assign Job</a></div>
+        <div id="reporting"><img src="/images/bar-chart.png" /><a href="/reporting">Reporting Stats</a></div>
+      </div>
+      <div id="logoutbtn"><img src="/images/logout.png" /><a href="/login" class="log-out-btn">Log out</a></div>
+    </div>
+  </div>
+
+  <div class="main-technician-container">
+    <!-- Start to code here-->
+    <div class="main-title-container">
+      <h1>Technician</h1>
+      <h3>Welcome to the Technician page</h3>
+    </div>
+
+    <div class="technician-forms-container">
+      <!-- Form Heading -->
+      <div class="form-heading">
+        <h3>Enter Technician Details</h3>
+      </div>
+
+      <form action="" id="techForm">
+
+
+        <!-- Two-column grid for the form inputs -->
+        <div class="tech-input-group">
+          <div class="tech-input">
+            <label for="Technician-Name">Enter Name:</label>
+            <input type="text" id="Technician-Name" name="Technician-Name" placeholder="Name" required />
+          </div>
+
+          <div class="tech-input">
+            <label for="Technician-Phone">Enter Phone:</label>
+            <input type="text" id="Technician-Phone" name="Technician-Phone" placeholder="Phone" required />
+          </div>
+
+          <div class="tech-input">
+            <label for="Technician-Surname">Enter Surname:</label>
+            <input type="text" id="Technician-Surname" name="Technician-Surname" placeholder="Surname" required />
+          </div>
+
+          <div class="tech-input">
+            <label for="Technician-Speciality">Enter Speciality:</label>
+            <input type="text" id="Technician-Speciality" name="Technician-Speciality" placeholder="Speciality"
+              required />
+          </div>
+
+          <div class="tech-input">
+            <label for="Technician-email">Enter Email:</label>
+            <input type="text" id="Technician-email" name="Technician-email" placeholder="Email" required />
+          </div>
+
+          <div class="tech-input">
+            <label for="Technician-workHours">Enter Work Hours:</label>
+            <input type="text" id="Technician-workHours" name="Technician-workHous" placeholder="Work Hours" required />
+          </div>
+        </div>
+
+        <!-- Full-width input for Location -->
+        <div class="tech-input-location">
+          <label for="Technician-Location">Enter Location:</label>
+          <input type="text" id="Technician-Location" name="Technician-Location" placeholder="Location" required />
+        </div>
+
+        <!-- Submit button at the bottom left -->
+        <div class="technician-submit-button-container">
+          <div class="technician-submit-border">
+            <button id="technician-submit-button" type="submit">Add Technician</button>
+          </div>
+        </div>
+    </div>
+    </form>
+  </div>
+  </div>
+
+  <script src="/js/technician.js"></script>
+</body>
+
+</html>

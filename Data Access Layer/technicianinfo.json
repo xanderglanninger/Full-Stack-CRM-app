@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Xander",
+    "surname": "Glanninger",
+    "location": "Monatana",
+    "available": true,
+    "category": "IT",
+    "skill_level": 7,
+    "phone": "0793370613"
+  },
+  {
+    "id": 2,
+    "name": "Jan",
+    "surname": "Albert",
+    "location": "Pretoria North",
+    "available": true,
+    "category": "IT",
+    "skill_level": 10,
+    "phone": "0864752534"
+  },
+  {
+    "id": 3,
+    "name": "Sean",
+    "surname": "Botha",
+    "location": "Potchefstroom",
+    "available": true,
+    "category": "IT",
+    "skill_level": 9,
+    "phone": "0716870324"
+  },
+  {
+    "id": 4,
+    "name": "Dylan",
+    "surname": "Cheballah",
+    "location": "Paarl",
+    "available": true,
+    "category": "IT",
+    "skill_level": 7,
+    "phone": "0716870324"
+  },
+  {
+    "id": 5,
+    "name": "Pieter",
+    "surname": "Marits",
+    "location": "Midrand",
+    "available": true,
+    "category": "IT",
+    "skill_level": 7,
+    "phone": "0716870324"
+  },
+  {
+    "id": 6,
+    "name": "Leo",
+    "surname": "Glanninger",
+    "location": "East Lynne",
+    "available": true,
+    "category": "IT",
+    "skill_level": 7,
+    "phone": "0716870324"
+  },
+  {
+    "id": 7,
+    "name": "Vernon",
+    "surname": "Engelbrecht",
+    "location": "Johannesburg",
+    "available": true,
+    "category": "IT",
+    "skill_level": 8,
+    "phone": "0716870324"
+  },
+  {
+    "id": 8,
+    "name": "Jeff",
+    "surname": "Manlik",
+    "email": "jeff@gmail.com",
+    "phone": "0123456789",
+    "speciality": "Plumming",
+    "workhours": "40",
+    "location": "Western Cape"
+  }
+]
