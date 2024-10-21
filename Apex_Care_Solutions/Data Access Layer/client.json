@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Jan",
+    "surname": "Mentz",
+    "email": "janmen777@gmail.com",
+    "phone": "0769616131`",
+    "location": "29 Repebliek"
+  },
+  {
+    "name": "John",
+    "surname": "Doe",
+    "email": "john.doe@example.com",
+    "phone": "0123456789",
+    "location": "123 Main St"
+  },
+  {
+    "name": "John",
+    "surname": "Mentz",
+    "email": "janmen777@gmail.com",
+    "phone": "0123456789",
+    "location": "Western Cape"
+  },
+  {
+    "name": "Jane",
+    "surname": "Mentz",
+    "email": "jane@gmail.com",
+    "phone": "123456789",
+    "location": "PTA Noord"
+  },
+  {
+    "name": "White Person",
+    "surname": "Black Huy",
+    "email": "black@gmail.com",
+    "phone": "77777777777",
+    "location": "Nigeria"
+  },
+  {
+    "name": "Xander",
+    "surname": "g",
+    "email": "g@gmail.com",
+    "phone": "g",
+    "location": "g"
+  }
+]

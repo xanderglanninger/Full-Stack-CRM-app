@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ==================================================================================================================================*/
+
+.logo-heading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+}
+
+.logo-heading-container h2 {
+  font-weight: 300;
+  font-size: 1.7vh;
+}
+
+.circle-logo {
+  width: 7vh;
+  height: 7vh;
+  background-color: #caf451;
+  border-radius: 50%;
+  border: #fff solid 1px;
+  margin-right: 2vh;
+}
+
+.sidebar {
+  width: 40vh !important;
+  background-color: #292929;
+  padding: 1vh;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: 100vh;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  margin-top: 2vh;
+}
+
+.nav-links div {
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.nav-links img {
+  margin-left: 12vh;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1vh;
+  font-weight: 200;
+  font-size: 1.5vh;
+}
+
+.nav-links div:hover {
+  background-color: #1e1e1e;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.log-out-btn-container {
+  height: 50vh;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+#contracts {
+  background-color: #1e1e1e;
+}
+
+#dashboard img {
+  height: 1.5vh;
+}
+
+#contracts img {
+  height: 1.5vh;
+}
+
+#technician img {
+  height: 1.5vh;
+}
+
+#client img {
+  height: 1.5vh;
+}
+
+#assignjob img {
+  height: 1.5vh;
+}
+
+#reporting img {
+  height: 1.5vh;
+}
+
+#logoutbtn img {
+  height: 1.5vh;
+}
+
+#logoutbtn a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1vh;
+  font-size: 1.5vh;
+  font-weight: 200;
+}
+
+#logoutbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ================================================================================================================================================================*/
+
+/* Main container for forms */
+.main-contracts-container {
+  padding: 4vh; /* Padding around the forms container */
+  margin-left: 40vh;
+}
+
+.main-title-container {
+  width: 100%; /* Title container spans full width */
+  height: 15vh; /* Height for the title container */
+  background: linear-gradient(to right, #caf451, #768e2f);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  flex-direction: column;
+}
+
+.main-title-container h1 {
+  font-weight: 300;
+  font-size: 4vh; /* Responsive font size */
+}
+
+.main-title-container h3 {
+  font-weight: 100;
+  font-size: 2vh; /* Responsive font size */
+}
+
+/* Flex container for side-by-side forms */
+.forms-container {
+  display: flex;
+  gap: 2rem; /* Space between the two forms */
+  width: 100%;
+  margin-top: 3vh;
+  height: 73vh;
+}
+
+/* Client form section */
+.clientcontract-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #2d2d2d; /* Background color for the form */
+  border-radius: 5px;
+  padding: 2rem; /* Padding inside the form */
+}
+
+/* Client form styling */
+.client-main-container form {
+  display: flex;
+  flex-direction: column; /* Arrange items vertically */
+  gap: 1.5rem; /* Space between form elements */
+  width: 40vh;
+}
+
+/* Align label and input horizontally */
+.client-input {
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+.client-input label {
+  margin-right: 1vh; /* Space between label and input */
+  color: #caf451; /* Label text color */
+  font-weight: 200;
+  font-size: 1.5vh;
+  width: 20vh;
+}
+
+/* Input field styling */
+.client-input input {
+  flex: 1; /* Allow input to grow */
+  background-color: #2d2d2d; /* Background color */
+  color: #caf451; /* Text color */
+  border: 1px solid #caf451; /* Border width */
+  border-radius: 5px; /* Rounded corners */
+  padding: 0.75rem; /* Padding inside input */
+  box-sizing: border-box; /* Include padding in width calculation */
+  outline: none; /* Remove default outline */
+  width: 20vh;
+  height: 4vh;
+  font-size: 1.3vh;
+}
+
+/* Submit button container */
+.client-submit-button-container {
+  display: flex;
+  justify-content: right; /* Center the button */
+  width: 100%; /* Full width for consistent alignment */
+}
+
+/* Submit button styling */
+#client-submit-button {
+  background: linear-gradient(to right, #caf451, #768e2f);
+  color: white; /* Text color */
+  border: #caf451 3px solid;
+  border-radius: 16px;
+  padding: 10px 20px; /* Padding for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  width: 20vh;
+  height: 4vh;
+  font-size: 1.7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#client-submit-button:hover {
+  background: linear-gradient(to right, #768e2f, #caf451);
+}
+
+/* Contract form section */
+.contract-main-container {
+  display: flex;
+  justify-content: center;
+  background-color: #2d2d2d; /* Background color for the form */
+  border-radius: 5px;
+  padding: 2rem; /* Padding inside the form */
+}
+
+/* Contract form styling */
+.contract-main-container form {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to new lines */
+  gap: 1rem; /* Space between form elements */
+  width: 100%;
+}
+
+/* General input fields for contract form */
+.contract-input {
+  display: flex; /* Align label and input horizontally */
+  align-items: center; /* Center items vertically */
+  width: calc(50% - 0.5rem); /* Half width minus space for gap */
+  height: max-content;
+}
+
+/* Label styling */
+.contract-input label {
+  width: 20vh; /* Fixed width for labels */
+  margin-right: 10px; /* Space between label and input */
+  color: #caf451; /* Label text color */
+  font-weight: 200;
+  font-size: 1.5vh;
+}
+
+/* Input field styling for contract form */
+.contract-input input {
+  flex: 1; /* Allow input to grow */
+  background-color: #2d2d2d; /* Background color */
+  color: #caf451; /* Text color */
+  border: 1px solid #caf451; /* Border width */
+  border-radius: 5px; /* Rounded corners */
+  padding: 0.75rem; /* Padding inside input */
+  box-sizing: border-box; /* Include padding in width calculation */
+  outline: none; /* Remove default outline */
+  width: 20vh;
+  height: 4vh;
+  font-size: 1.3vh;
+}
+
+/* Description field styling */
+.contract-description {
+  display: flex;
+  flex-direction: column; /* Stack description items vertically */
+  gap: 0.5rem; /* Space between description elements */
+  width: 100%; /* Full width */
+  color: #caf451; /* Text color */
+}
+
+.contract-description label {
+  font-size: 1.5vh;
+  font-weight: 200;
+}
+
+/* Textarea styling */
+textarea {
+  width: 100%; /* Full width */
+  background-color: #2d2d2d; /* Background color */
+  color: #caf451; /* Text color */
+  border: 1px solid #caf451; /* Border width */
+  border-radius: 5px; /* Rounded corners */
+  padding: 0.75rem; /* Padding inside textarea */
+  box-sizing: border-box; /* Include padding in width calculation */
+  resize: vertical; /* Allow vertical resizing */
+  height: 6vh;
+  font-size: 1.3vh;
+}
+
+/* Submit button container for contract form */
+.contract-submit-button-container {
+  display: flex;
+  justify-content: flex-end; /* Aligns button to the right */
+  width: 100%;
+}
+
+/* Submit button styling for contract form */
+#contract-submit-button {
+  background: linear-gradient(to right, #caf451, #768e2f);
+  color: white; /* Text color */
+  border: #caf451 3px solid;
+  border-radius: 16px;
+  padding: 10px 20px; /* Padding for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  width: 20vh;
+  height: 4vh;
+  font-size: 1.7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contract-submit-button:hover {
+  background: linear-gradient(to right, #768e2f, #caf451);
+}
+
+/* Submit button border styling */
+
+/* General button styles */
+button {
+  padding: 0.75rem 1.5rem; /* Padding for buttons */
+  font-size: 1rem; /* Font size for buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/contracts.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <script src="/js/redirect.js"></script>
+  <title>Contract || Client</title>
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="logo-heading-container">
+      <div class="circle-logo"></div>
+      <h2>Apex Care Solutions</h2>
+    </div>
+    <div>
+      <div class="nav-links">
+        <div id="dashboard"><img src="/images/home (1).png" /> <a href="/dashboard">Dashboard</a></div>
+        <div id="contracts"><img src="/images/contract.png" /><a href="/contract">Contracts & Clients</a></div>
+        <div id="technician"><img src="/images/man.png" /><a href="/technician">Technician</a></div>
+        <div id="assignjob"><img src="/images/suitcase.png" /><a href="/assign">Assign Job</a></div>
+        <div id="reporting"><img src="/images/bar-chart.png" /><a href="/reporting">Reporting Stats</a></div>
+      </div>
+      <div id="logoutbtn"><img src="/images/logout.png" /><a href="/login" class="log-out-btn">Log out</a></div>
+    </div>
+  </div>
+
+  <div class="main-contracts-container">
+    <div class="main-title-container">
+      <h1>Client And Contract Creation</h1>
+      <h3>Welcome to the client and contracts page</h3>
+    </div>
+    <div class="forms-container">
+      <!-- Client Form -->
+      <div class="clientcontract-main-container">
+        <div class="client-main-container">
+          <form action="" id="clientForm">
+            <div class="client-input">
+              <label for="Client-Name">Client Name:</label>
+              <input type="text" id="Client-Name" name="Client-Name" placeholder="Name" required />
+            </div>
+
+            <div class="client-input">
+              <label for="Client-Surname">Client Surname:</label>
+              <input type="text" id="Client-Surname" name="Client-Surname" placeholder="Surname" required />
+            </div>
+
+            <div class="client-input">
+              <label for="Client-Email">Client Email:</label>
+              <input type="email" id="Client-Email" name="Client-Email" placeholder="Email" required />
+            </div>
+
+            <div class="client-input">
+              <label for="Client-Phone">Client Phone:</label>
+              <input type="tel" id="Client-Phone" name="Client-Phone" placeholder="Phone" required />
+            </div>
+
+            <div class="client-input">
+              <label for="Client-Location">Client Location:</label>
+              <input type="text" id="Client-Location" name="Client-Location" placeholder="Location" required />
+            </div>
+
+            <div class="client-submit-button-container">
+              <button id="client-submit-button" type="submit">Add Client</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Contract Form -->
+      <div class="contract-main-container">
+        <form action="" id="contractForm">
+          <div class="contract-input">
+            <label for="Contract-Client-Name">Client Name:</label>
+            <input type="text" id="Contract-Client-Name" name="Contract-Client-Name" placeholder="Name" required />
+          </div>
+
+          <div class="contract-input">
+            <label for="Contract-Client-Surname">Client Surname:</label>
+            <input type="text" id="Contract-Client-Surname" name="Contract-Client-Surname" placeholder="Surname"
+              required />
+          </div>
+
+          <div class="contract-input">
+            <label for="Contract-Client-Email">Client Email:</label>
+            <input type="email" id="Contract-Client-Email" name="Contract-Client-Email" placeholder="Email" required />
+          </div>
+
+          <div class="contract-input">
+            <label for="Contract-Client-Phone">Client Phone:</label>
+            <input type="tel" id="Contract-Client-Phone" name="Contract-Client-Phone" placeholder="Phone" required />
+          </div>
+
+          <div class="contract-input">
+            <label for="Contract-Category">Contract Category:</label>
+            <input type="text" id="Contract-Category" name="Contract-Category" placeholder="Category" required />
+          </div>
+
+          <div class="contract-input">
+            <label for="Contract-Maintenance">Contract Maintenance:</label>
+            <input type="text" id="Contract-Maintenance" name="Contract-Maintenance" placeholder="Maintenance"
+              required />
+          </div>
+
+          <div class="contract-input">
+            <label for="Contract-Time-Period">Contract Time Period:</label>
+            <input type="text" id="Contract-Time-Period" name="Contract-Time-Period" placeholder="Time Period"
+              required />
+          </div>
+
+          <div class="contract-input">
+            <label for="Contract-Start-Date">Contract Start Date:</label>
+            <input type="date" id="Contract-Start-Date" name="Contract-Start-Date" required />
+          </div>
+
+          <div class="contract-input">
+            <label for="Contract-Location">Contract Location:</label>
+            <input type="text" id="Contract-Location" name="Contract-Location" placeholder="Location" required />
+            <!-- New Location Field -->
+          </div>
+
+          <div class="contract-description">
+            <label for="Contract-Description">Contract Description:</label>
+            <textarea id="Contract-Description" name="Contract-Description" rows="3" placeholder="Description"
+              required></textarea>
+          </div>
+
+          <div class="contract-submit-button-container">
+            <button id="contract-submit-button" type="submit">Add Contract</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/clientcontract.js"></script>
+</body>
+
+</html>

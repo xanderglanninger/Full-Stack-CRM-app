@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  font-family: "Poppins", sans-serif;
+}
+
+.left-container {
+  height: 100vh;
+  background-color: #1e1e1e;
+  width: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-container {
+  background: linear-gradient(90deg, #768e2f, #caf451);
+  height: 100vh;
+  width: 100vh;
+}
+
+.title-main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+.title-logo-container {
+  height: 8vh;
+  width: 8vh;
+  background-color: #caf451;
+  border-radius: 50%;
+}
+
+.title-secondary-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2vh;
+}
+
+.title-secondary-container h1 {
+  color: white;
+  font-weight: 400;
+  font-size: 4vh;
+}
+
+.title-secondary-container h3 {
+  color: white;
+  font-weight: 100;
+  letter-spacing: 0.6vh;
+}
+
+.login-main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.login-secondary-container {
+  height: 50vh;
+  width: 50vh;
+  border: solid 2px #caf451;
+  border-radius: 7px;
+  background-color: #2d2d2d;
+  padding: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-header-container h1 {
+  color: #ffffff;
+  font-weight: 200;
+  font-size: 4vh;
+}
+
+.login-header-container p {
+  color: #d3d3d3;
+  font-weight: 100;
+  font-size: 1.2vh;
+}
+
+.enter-name-container {
+  margin-top: 3vh;
+  width: 100%;
+}
+
+.enter-name-container p {
+  color: #ffffff;
+  font-size: 1.5vh;
+  font-weight: 100;
+}
+
+.enter-name-editbox {
+  height: 5vh;
+  background-color: transparent;
+  border: #caf451 1px solid;
+  border-radius: 6px;
+  width: 100%;
+  padding: 1.5vh;
+  font-size: 1.5vh;
+  color: #ffffff;
+}
+
+.enter-password-container {
+  margin-top: 1.5vh;
+  width: 100%;
+}
+
+.enter-password-container p {
+  color: #ffffff;
+  font-size: 1.5vh;
+  font-weight: 100;
+}
+
+.enter-password-editbox {
+  height: 5vh;
+  background-color: transparent;
+  border: #caf451 1px solid;
+  border-radius: 6px;
+  width: 100%;
+  padding: 1.5vh;
+  font-size: 1.5vh;
+  color: #ffffff;
+}
+
+.login-button {
+  height: 4vh;
+  width: 100%;
+  background: linear-gradient(90deg, #768e2f, #caf451);
+  font-size: 2vh;
+  border-radius: 6px;
+  color: #ffffff;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4vh;
+  cursor: pointer;
+}

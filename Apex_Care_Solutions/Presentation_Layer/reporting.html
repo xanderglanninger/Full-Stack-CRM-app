@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/reporting.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/js/redirect.js"></script>
+    <title>Reporting Stats</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo-heading-container">
+        <div class="circle-logo"></div>
+        <h2>Apex Care Solutions</h2>
+      </div>
+
+      <div>
+        <div class="nav-links">
+          <div id="dashboard"><img src="/images/home (1).png" /> <a href="/dashboard">Dashboard</a></div>
+          <div id="contracts"><img src="/images/contract.png" /><a href="/contract">Contracts & Clients</a></div>
+          <div id="technician"><img src="/images/man.png" /><a href="/technician">Technician</a></div>
+          <div id="assignjob"><img src="/images/suitcase.png" /><a href="/assign">Assign Job</a></div>
+          <div id="reporting"><img src="/images/bar-chart.png" /><a href="/reporting">Reporting Stats</a></div>
+        </div>
+        <div id="logoutbtn"><img src="/images/logout.png" /><a href="/login" class="log-out-btn">Log out</a></div>
+      </div>
+    </div>
+
+    <div class="main-reporting-container">
+      <div class="main-title-container">
+        <h1>Reporting System</h1>
+        <h3>Welcome to the Reporting System page</h3>
+      </div>
+
+      <div class="stats-container">
+        <div class="statistics-header">
+          <p>View all the Statistics</p>
+        </div>
+        
+        <div class="filters">
+          <div class="select-view">
+            <select>
+              <option>Select a view...</option>
+            </select>
+          </div>
+          <div class="search-bar">
+            <input type="text" placeholder="Search for an ID..." />
+            <button><img src="/images/search-interface-symbol.png" alt="Search Icon" /></button>
+          </div>
+        </div>
+
+        <div class="table">
+          <div class="table-header">Heading</div>
+          <div class="table-header">Heading</div>
+          <div class="table-header">Heading</div>
+          <div class="table-header">Heading</div>
+          <div class="table-header">Heading</div>
+          <div class="table-header">Heading</div>
+          <div class="table-header">Heading</div>
+
+          <div class="table-column"></div>
+          <div class="table-column"></div>
+          <div class="table-column"></div>
+          <div class="table-column"></div>
+          <div class="table-column"></div>
+          <div class="table-column"></div>
+          <div class="table-column"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/reporting.js"></script>
+  </body>
+</html>
