@@ -2,7 +2,9 @@ const express = require("express");
 const app = express();
 const fs = require("fs");
 const path = require("path");
-const port = 5000;
+const port = process.env.PORT || 5000;
+
+
 const GetCounter = require("./Business_Layer/logic.js");
 const {textGenTextOnlyPrompt, sendMail} = require("./Data Access Layer/data.js");
 const { CLIENT_RENEG_LIMIT } = require("tls");
@@ -586,8 +588,6 @@ app.get("/technicianmobile", (req, res) => {
   }
 });
 
-
-
-app.listen(port, () => {
+app.listen(port, "0.0.0.0", () => {
   console.log(`Server running at http://localhost:${port}`);
 });
