@@ -178,21 +178,29 @@ app.get("/dashboard", async (req, res) => {
 });
 
 app.get(["/", "/login"], (req, res) => {
-  try {
-    res.send(templogin);
-  } catch (error) {
-    res.status(500).send("Error retrieving counters.");
+  if (isMobileDevice()) {
+    try {
+      res.send(tempTechLogin);
+    } catch (error) {
+      res.status(500).send("Error retrieving counters.");
+    }
+  } else {
+    try {
+      res.send(templogin);
+    } catch (error) {
+      res.status(500).send("Error retrieving counters.");
+    }
   }
+  
 });
 
-app.get("/technicianlogin", (req, res) => {
+/*app.get("/technicianlogin", (req, res) => {
   try {
     res.send(tempTechLogin);
   } catch (error) {
     res.status(500).send("Error retrieving counters.");
   }
-});
-
+});*/
 app.post("/login", async (req, res) => {
   const { username, password } = req.body;
 
@@ -528,6 +536,10 @@ app.post("/update-contract", async (req, res) => {
     res.status(500).send({ success: false, message: "Error updating contract." });
   }
 });
+
+function isMobileDevice() {
+  return /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
 
 app.listen(port, "0.0.0.0", () => {
   console.log(`Server running at http://localhost:${port}`);
