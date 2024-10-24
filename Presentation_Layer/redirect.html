@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function isMobileDevice() {
+        return /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      }
+
+      const isMobile = isMobileDevice();
+
+      // Send a POST request to the server with the device type information
+      fetch("/technicianlogin", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ isMobile: isMobile }),
+      })
+        .then((response) => response.text()) // Get the response as plain text (HTML)
+        .then((html) => {
+          // Replace the current document's content with the HTML from the server
+          document.open();
+          document.write(html);
+          document.close();
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+        });
+    </script>
+  </body>
+</html>
