@@ -6,9 +6,7 @@ let OldClients = [];
 document.addEventListener("DOMContentLoaded", async () => {
   const clientForm = document.getElementById("clientForm");
   const contractForm = document.getElementById("contractForm");
-  const contractClientNameInput = document.getElementById(
-    "Contract-Client-Name"
-  );
+  const contractClientNameInput = document.getElementById("Contract-Client-Name");
 
   // Load old clients from client.json
   await loadOldClients(); // Ensures OldClients is available before proceeding
@@ -37,6 +35,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     event.preventDefault();
 
     const newContract = {
+      contract_id: 0,
       clientName: contractClientNameInput.value,
       clientSurname: document.getElementById("Contract-Client-Surname").value,
       clientEmail: document.getElementById("Contract-Client-Email").value,
@@ -48,7 +47,9 @@ document.addEventListener("DOMContentLoaded", async () => {
       contractname: document.getElementById("Contract-Description").value,
       location: document.getElementById("Contract-Location").value,
       assigned: "none",
-      finished: "false",
+      finished: false,
+      accepted: false,
+      reviewed: false,
     };
 
     writeToContract(newContract);
@@ -67,23 +68,16 @@ document.addEventListener("DOMContentLoaded", async () => {
       const [inputName, inputSurname] = inputParts;
 
       matchedClient = OldClients.find(
-        (client) =>
-          client.name.toLowerCase() === inputName &&
-          client.surname.toLowerCase() === inputSurname
+        (client) => client.name.toLowerCase() === inputName && client.surname.toLowerCase() === inputSurname
       );
     } else {
-      matchedClient = OldClients.find(
-        (client) => client.name.toLowerCase() === input
-      );
+      matchedClient = OldClients.find((client) => client.name.toLowerCase() === input);
     }
 
     if (matchedClient) {
-      document.getElementById("Contract-Client-Surname").value =
-        matchedClient.surname;
-      document.getElementById("Contract-Client-Email").value =
-        matchedClient.email;
-      document.getElementById("Contract-Client-Phone").value =
-        matchedClient.phone;
+      document.getElementById("Contract-Client-Surname").value = matchedClient.surname;
+      document.getElementById("Contract-Client-Email").value = matchedClient.email;
+      document.getElementById("Contract-Client-Phone").value = matchedClient.phone;
     } else {
       document.getElementById("Contract-Client-Surname").value = "";
       document.getElementById("Contract-Client-Email").value = "";

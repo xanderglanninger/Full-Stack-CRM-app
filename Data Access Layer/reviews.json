@@ -1,42 +1,18 @@
 [
   {
-    "contractId": "001",
-    "clientName": "Jeff",
-    "clientSurname": "Mentz",
-    "rating": "2",
-    "description": ";lll",
-    "fileComplaint": false
-  },
-  {
-    "contractId": "001",
-    "clientName": "Jeff",
-    "clientSurname": "Mentz",
-    "rating": "2",
-    "description": "ooo",
-    "fileComplaint": false
-  },
-  {
-    "contractId": "001",
-    "clientName": "Jeff",
-    "clientSurname": "Mentz",
-    "rating": "1",
-    "description": "ooo",
-    "fileComplaint": false
-  },
-  {
-    "contractName": "Contract 1",
+    "contractName": "I need my computer Fixed",
     "clientName": "Jan",
     "clientSurname": "Mentz",
-    "rating": "3",
-    "description": "He was well manered in the bedroom and took it really slow",
+    "rating": "4",
+    "description": "gg",
     "fileComplaint": false
   },
   {
-    "contractName": "Fill her up",
-    "clientName": "Jane",
-    "clientSurname": "Mentz",
-    "rating": "1",
-    "description": "He didnt fill me up",
+    "contractName": "Server Restart",
+    "clientName": "Jessy",
+    "clientSurname": "Smith",
+    "rating": "3",
+    "description": "Im extremely happy with this review page",
     "fileComplaint": true
   }
 ]

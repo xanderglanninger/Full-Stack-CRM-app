@@ -4,48 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Review Submission Form</title>
-    <link rel="stylesheet" href="css/review.css">
+    <title>Apex Care Solutions - Review Submission</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/review.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <form id="reviewForm">
-        <h2>Review Submission</h2>
-    
-        <label for="contractName">Contract Name</label>
-        
-        <select id="contractId" name="contractName" required>
-        </select>
-    
-        <label for="clientName">Client Name</label>
-        <input type="text" id="clientName" name="clientName" required>
-    
-        <label for="clientSurname">Client Surname</label>
-        <input type="text" id="clientSurname" name="clientSurname" required>
-    
-        <label for="rating">Rating (out of 5)</label>
-        <select id="rating" name="rating" required>
-            <option value="">Select Rating</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-        </select>
-    
-        <label for="description">Description</label>
-        <textarea id="description" name="description" rows="4" required></textarea>
-    
-        <div class="checkbox-container">
-            <input type="checkbox" id="fileComplaint" name="fileComplaint">
-            <label for="fileComplaint">File Complaint</label>
-        </div>
-    
-        <button type="submit">Submit Review</button>
-    </form>
-    
+    <div class="container">
+        <div class="left-section">
+            <h2>Let's discuss your feedback with Apex Care Solutions</h2>
+            <p>Tell us about your experience and we'll respond shortly!</p>
 
+            <div class="contact-info">
+                <div>
+                    <img src="images/mail.png" alt="Email Icon">
+                    
+                    <p>ApexCareSolutions@gmail.com</p>
+                </div>
+                <div>
+                    <img src="images/telephone.png" alt="Phone Icon">
+                    <p>+123 456 789</p>
+                </div>
+                <div>
+                    <img src="images/location.png" alt="Location Icon">
+                    <p>123 Care Street, Solutions House</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <form id="reviewForm">
+                <h2>Submit Your Review</h2>
+            
+                <label for="contractName">Contract Name</label>
+                <select id="contractId" name="contractName" required>
+                    <option value="">Select Contract</option>
+                </select>
+            
+                <label for="clientName">Client Name</label>
+                <input type="text" id="clientName" name="clientName" required>
+            
+                <label for="clientSurname">Client Surname</label>
+                <input type="text" id="clientSurname" name="clientSurname" required>
+            
+                <label for="rating">Rating (out of 5)</label>
+                <select id="rating" name="rating" required>
+                    <option value="">Select Rating</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            
+                <label for="description">Description</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+            
+                <div class="checkbox-container">
+                    <label for="fileComplaint">File Complaint</label>
+                    <input type="checkbox" id="fileComplaint" name="fileComplaint">
+                </div>
+            
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+    </div>
 
     <script src="/js/contractCompletion.js"></script>
 </body>
