@@ -52,6 +52,8 @@ const tempTechLogin = fs.readFileSync(
   "utf-8"
 );
 
+const redirect = fs.readFileSync(path.join(__dirname, "Presentation_Layer", "redirect.html"), "utf-8");
+
 //==========================================================================================
 
 //===============================================================================================================================
@@ -179,7 +181,7 @@ app.get("/dashboard", async (req, res) => {
 
 app.get(["/", "/login"], (req, res) => {
   try {
-    res.send(templogin);
+    res.send(redirect);
   } catch (error) {
     res.status(500).send("Error retrieving counters.");
   }
@@ -523,9 +525,16 @@ app.post("/update-contract", async (req, res) => {
 
 app.post("/technicianlogin", (req, res) => {
   const isMobile = req.body.isMobile;
+  console.log(isMobile);
   if (isMobile) {
     try {
       res.send(tempTechLogin);
+    } catch (error) {
+      res.status(500).send("Error retrieving counters.");
+    }
+  } else {
+    try {
+      res.send(templogin);
     } catch (error) {
       res.status(500).send("Error retrieving counters.");
     }
