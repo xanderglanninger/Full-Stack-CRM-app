@@ -12,7 +12,7 @@ const GoogleAI = () => {
 };
 
 function redirectToPage() {
-  window.location.href = "http://localhost:5000/loadingscreen";
+  window.location.href = "https://apexcaresolutions-5d1fg4vm.b4a.run//loadingscreen";
 }
 
 // Assuming this is part of your fetch call
