@@ -7,7 +7,6 @@ body {
   background: linear-gradient(180deg, #80e1ca, #467b6e);
   width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: poppins;
@@ -38,7 +37,7 @@ body {
 }
 
 .login-main-container input {
-  height: 6vh;
+  height: 7vh;
   width: 30vh;
   border: white solid 2px;
   margin-top: 2vh;
@@ -47,19 +46,19 @@ body {
   padding-left: 2vh;
   padding-right: 2vh;
   color: white;
-  font-weight: 100;
-  outline: none !important;
+  font-weight: 600;
+  outline: none;
 }
 
 .login-main-container button {
-  height: 6vh;
+  height: 7vh;
   width: 100%;
   background-color: #80e1ca;
   border: none;
   border-radius: 5px;
   color: white;
   font-weight: 400;
-  font-size: 2.4vh;
+  font-size: 2.6vh;
   margin-top: 2vh;
 }
 
