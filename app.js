@@ -47,6 +47,11 @@ const tempTechDashboard = fs.readFileSync(
   "utf-8"
 );
 
+const tempTechLogin = fs.readFileSync(
+  path.join(__dirname, "Presentation_Layer", "technician", "technicianLogin.html"),
+  "utf-8"
+);
+
 //==========================================================================================
 
 //===============================================================================================================================
@@ -179,6 +184,15 @@ app.get(["/", "/login"], (req, res) => {
     res.status(500).send("Error retrieving counters.");
   }
 });
+
+app.get("/technicianlogin", (req, res) => {
+  try {
+    res.send(tempTechLogin);
+  } catch (error) {
+    res.status(500).send("Error retrieving counters.");
+  }
+});
+
 app.post("/login", async (req, res) => {
   const { username, password } = req.body;
 
